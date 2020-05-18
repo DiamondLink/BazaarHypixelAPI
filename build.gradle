@@ -1,0 +1,17 @@
+apply plugin : 'java'
+apply plugin : 'eclipse'
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.bazaarapi.diamondlink.Main'
+        )
+    }
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: '*.jar')
+}
