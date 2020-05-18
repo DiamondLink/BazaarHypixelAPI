@@ -8,6 +8,19 @@ This java library allows you to get hypixel skyblock bazaar infos, and players i
 
 - Also, you'll need a hypixel api key to use it. You can get one by typing "/api new" in the chat, on hypixel.
 
+## Setup (for developers) (using Windows & Eclipse)
+
+- Run these two commands in PowerShell:
+```bash
+./gradlew.bat eclipse
+```
+- In Eclipse, go to Import... > Existing Projects into Workspace and select this project.
+- And to compile do :
+```bash
+./gradlew build
+```
+The jar file will be in build/libs
+
 ## Usage
 - First, import the library :
 ```java
