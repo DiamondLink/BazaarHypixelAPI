@@ -15,6 +15,7 @@ This java library allows you to get hypixel skyblock bazaar infos, and players i
 ./gradlew.bat eclipse
 ```
 - In Eclipse, go to Import... > Existing Projects into Workspace and select this project.
+- Also, MAKE SURE TO ADD java-json TO CLASSPATH
 - And to compile do :
 ```bash
 ./gradlew build
