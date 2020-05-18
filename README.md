@@ -52,9 +52,10 @@ bazaarAPIReader.getSellVolume(JSONObject dataProduct);
 bazaarAPIReaderbazaarAPIReader.getCurrentCoinsOnThePlayerProfile(String uuid, String apiKey)
 ```
 It will detect the profile is playing is playing on according to the last save time for each profiles
+
 The uuid is the player uuid without "-", for example, mine is "eeb204079b664056960d5f781c32e7ee"
 
--- There are also minors features provided by the api, have a look at this [file]( https://github.com/DiamondLink/BazaarHypixelAPI/blob/master/src/main/java/com/bazaarapi/diamondlink/modules/ApiReader.java)
+- There are also minors features provided by the api, have a look at this [file]( https://github.com/DiamondLink/BazaarHypixelAPI/blob/master/src/main/java/com/bazaarapi/diamondlink/modules/ApiReader.java)
 
 ## Credits
 By me (DiamondLink), enjoy
