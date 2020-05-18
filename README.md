@@ -1,7 +1,7 @@
 # BazaarHypixelAPI
 This java library allows you to get hypixel skyblock bazaar infos, and players info, using the hypixel api
 ## Installation
-- Download the library from [releases](https://github.com/DiamondLink/BazaarHypixelAPI/packages)
+- Download the library from [releases](https://github.com/DiamondLink/BazaarHypixelAPI/releases)
 - Create a "libs" folder in youre project's root
 - Add the library to youre classpath
 - Done !
