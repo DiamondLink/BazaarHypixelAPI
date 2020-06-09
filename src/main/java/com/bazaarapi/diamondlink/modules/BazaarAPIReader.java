@@ -1,6 +1,7 @@
 package com.bazaarapi.diamondlink.modules;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -14,6 +15,9 @@ import com.bazaarapi.diamondlink.utils.APIURLsUtils;
 import com.bazaarapi.diamondlink.utils.JsonUtils;
 public class BazaarAPIReader {
 	
+	public static JSONObject getBazaarDataProduct(String productID, String apiKey) throws MalformedURLException, IOException, JSONException {
+		return JsonReader.readJsonFromUrl(APIURLsUtils.getBazaarDataAPIURl(productID, apiKey));
+	}
 	
 	public List<String> getBazaarProductsList(String apiKey) throws JSONException, IOException {
 		JSONObject productsResult = JsonReader.readJsonFromUrl(APIURLsUtils.getBazaarProductsAPIURL(apiKey));
@@ -35,7 +39,6 @@ public class BazaarAPIReader {
 	}
 
 	
-	@SuppressWarnings("unchecked")
 	private static List<HashMap<String, Double>> getSummary(String summaryName, JSONObject dataProduct) throws JSONException {
 		
 		JSONArray summary = dataProduct.getJSONObject("product_info").getJSONArray(summaryName);

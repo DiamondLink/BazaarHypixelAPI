@@ -16,10 +16,6 @@ import com.bazaarapi.diamondlink.utils.TimeUtils;
 
 public class ApiReader {
 	
-	public static JSONObject getBazaarDataProduct(String productID, String apiKey) throws MalformedURLException, IOException, JSONException {
-		return JsonReader.readJsonFromUrl(APIURLsUtils.getBazaarDataAPIURl(productID, apiKey));
-	}
-	
 	public static JSONObject getPlayerStats(String uuid, String apiKey) throws MalformedURLException, IOException, JSONException {
 		return JsonReader.readJsonFromUrl(APIURLsUtils.getPlayerStatsURL(uuid, apiKey));
 	}
