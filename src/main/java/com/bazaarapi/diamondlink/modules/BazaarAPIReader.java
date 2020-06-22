@@ -86,6 +86,14 @@ public class BazaarAPIReader {
 		return dataProduct.getJSONObject("product_info").getJSONObject("quick_status").getInt("sellVolume");
 	}
 	
+	public int getBuyMovingWeek(JSONObject dataProduct) throws JSONException {
+		return dataProduct.getJSONObject("product_info").getJSONObject("quick_status").getInt("buyMovingWeek");
+	}
+	
+	public int getSellMovingWeek(JSONObject dataProduct) throws JSONException {
+		return dataProduct.getJSONObject("product_info").getJSONObject("quick_status").getInt("sellMovingWeek");
+	}
+	
 	public Double getCurrentCoinsOnThePlayerProfile(String uuid, String apiKey) throws JSONException, IOException {
 		return ApiReader.getActiveSkyblockProfilePlayerData(uuid, apiKey).getDouble("coin_purse");
 	}
